@@ -14,6 +14,20 @@ open class FolioReaderContainer: UIViewController {
     var shouldHideStatusBar = true
     var shouldRemoveEpub = true
     
+    // Turn on edge protection for the bottom edge of the display.
+    // This will give the indicator a more subtle appearance and
+    // change it's behavior so that two swipes are required to exit your app.
+    open var preferredEdges: UIRectEdge = [.bottom, .top]
+    open override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge {
+        preferredEdges // .bottom for protecting home indicator, .top for protecting control center
+    }
+    
+    //This is to hide home indicator. Doesn't work with preferredEdges.
+    open var prefersHomeIndicatorHidden = false
+    open override var prefersHomeIndicatorAutoHidden: Bool {
+        prefersHomeIndicatorHidden
+    }
+    
     // Mark those property as public so they can accessed from other classes/subclasses.
     public var epubPath: String
 	public var unzipPath: String?
