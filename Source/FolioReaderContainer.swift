@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FontBlaster
 
 /// Reader container
 open class FolioReaderContainer: UIViewController {

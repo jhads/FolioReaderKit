@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A41E8912031E22300A8F70C /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E8902031E22300A8F70C /* MediaType.swift */; };
-		1A65DDCC1DA73F8E0033C277 /* MenuItemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDCB1DA73F8D0033C277 /* MenuItemKit.framework */; };
 		1A65DDD21DA744190033C277 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD01DA744190033C277 /* Realm.framework */; };
 		1A65DDD31DA744190033C277 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD11DA744190033C277 /* RealmSwift.framework */; };
 		1A65DDD51DA744410033C277 /* QuoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65DDD41DA744410033C277 /* QuoteImage.swift */; };
@@ -60,62 +59,43 @@
 		1A9590131D397BE900D56699 /* ScrollScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F901D397BE900D56699 /* ScrollScrubber.swift */; };
 		1A9590151D397C1300D56699 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9590141D397C1300D56699 /* Images.xcassets */; };
 		1A9590171D397CAF00D56699 /* FolioReaderKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1A9590161D397CAF00D56699 /* FolioReaderKit.podspec */; };
-		1AC255CF220217DF00841FA2 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E8902031E22300A8F70C /* MediaType.swift */; };
-		1AC255D22202191F00841FA2 /* SMSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D69C471D0387F7003B4CCD /* SMSegmentView.swift */; };
-		1AC255D32202193700841FA2 /* SMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D69C461D0387F7003B4CCD /* SMSegment.swift */; };
-		1AC255D42202195200841FA2 /* HADiscreteSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D69C441D0387F7003B4CCD /* HADiscreteSlider.swift */; };
-		1AC255D52202196D00841FA2 /* FolioReaderAddHighlightNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256AE60A20A1D4DD00EAD746 /* FolioReaderAddHighlightNote.swift */; };
 		256AE60B20A1D4DD00EAD746 /* FolioReaderAddHighlightNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256AE60A20A1D4DD00EAD746 /* FolioReaderAddHighlightNote.swift */; };
 		3A27F08C1FD9BE5800D84A57 /* FolioReaderUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F08A1FD9BE5800D84A57 /* FolioReaderUserDefaults.swift */; };
 		3A27F08E1FD9BE5800D84A57 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F08B1FD9BE5800D84A57 /* Extensions.swift */; };
-		3A27F09D1FD9C24A00D84A57 /* FRBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F051D397BE900D56699 /* FRBook.swift */; };
-		3A27F09E1FD9C24A00D84A57 /* FREpubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F061D397BE900D56699 /* FREpubParser.swift */; };
-		3A27F0A01FD9C24A00D84A57 /* FRMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F081D397BE900D56699 /* FRMetadata.swift */; };
-		3A27F0A11FD9C24A00D84A57 /* FRResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F091D397BE900D56699 /* FRResource.swift */; };
-		3A27F0A21FD9C24A00D84A57 /* FRResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F0A1D397BE900D56699 /* FRResources.swift */; };
-		3A27F0A31FD9C24A00D84A57 /* FRSmilElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F0B1D397BE900D56699 /* FRSmilElement.swift */; };
-		3A27F0A41FD9C24A00D84A57 /* FRSmils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F0C1D397BE900D56699 /* FRSmils.swift */; };
-		3A27F0A51FD9C24A00D84A57 /* FRSpine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F0D1D397BE900D56699 /* FRSpine.swift */; };
-		3A27F0A61FD9C24A00D84A57 /* FRTocReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F0E1D397BE900D56699 /* FRTocReference.swift */; };
-		3A27F0AF1FD9C25500D84A57 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F08B1FD9BE5800D84A57 /* Extensions.swift */; };
-		3A27F0B01FD9C25500D84A57 /* FolioReaderAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F0F1D397BE900D56699 /* FolioReaderAudioPlayer.swift */; };
-		3A27F0B11FD9C25500D84A57 /* FolioReaderCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F101D397BE900D56699 /* FolioReaderCenter.swift */; };
-		3A27F0B21FD9C25500D84A57 /* FolioReaderChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F111D397BE900D56699 /* FolioReaderChapterList.swift */; };
-		3A27F0B31FD9C25500D84A57 /* FolioReaderChapterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F121D397BE900D56699 /* FolioReaderChapterListCell.swift */; };
-		3A27F0B41FD9C25500D84A57 /* FolioReaderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F131D397BE900D56699 /* FolioReaderConfig.swift */; };
-		3A27F0B51FD9C25500D84A57 /* FolioReaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F141D397BE900D56699 /* FolioReaderContainer.swift */; };
-		3A27F0B61FD9C25500D84A57 /* FolioReaderFontsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F151D397BE900D56699 /* FolioReaderFontsMenu.swift */; };
-		3A27F0B71FD9C25500D84A57 /* FolioReaderHighlightList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F161D397BE900D56699 /* FolioReaderHighlightList.swift */; };
-		3A27F0B81FD9C25500D84A57 /* FolioReaderKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F181D397BE900D56699 /* FolioReaderKit.swift */; };
-		3A27F0B91FD9C25500D84A57 /* FolioReaderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F191D397BE900D56699 /* FolioReaderPage.swift */; };
-		3A27F0BA1FD9C25500D84A57 /* FolioReaderPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F1A1D397BE900D56699 /* FolioReaderPageIndicator.swift */; };
-		3A27F0BB1FD9C25500D84A57 /* FolioReaderPlayerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F1B1D397BE900D56699 /* FolioReaderPlayerMenu.swift */; };
-		3A27F0BC1FD9C25500D84A57 /* FolioReaderQuoteShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65DDD61DA7450A0033C277 /* FolioReaderQuoteShare.swift */; };
-		3A27F0BD1FD9C25500D84A57 /* FolioReaderSharingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F1C1D397BE900D56699 /* FolioReaderSharingProvider.swift */; };
-		3A27F0BE1FD9C25500D84A57 /* FolioReaderUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F08A1FD9BE5800D84A57 /* FolioReaderUserDefaults.swift */; };
-		3A27F0BF1FD9C25500D84A57 /* FolioReaderWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5EEB81D9433C100E42810 /* FolioReaderWebView.swift */; };
-		3A27F0C21FD9C25C00D84A57 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F241D397BE900D56699 /* PageViewController.swift */; };
-		3A27F0C31FD9C25C00D84A57 /* QuoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65DDD41DA744410033C277 /* QuoteImage.swift */; };
-		3A27F0C41FD9C25C00D84A57 /* ScrollScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F901D397BE900D56699 /* ScrollScrubber.swift */; };
-		3A27F0C51FD9C31E00D84A57 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD01DA744190033C277 /* Realm.framework */; };
-		3A27F0C61FD9C31E00D84A57 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD11DA744190033C277 /* RealmSwift.framework */; };
-		3A27F0C71FD9C33A00D84A57 /* Highlight+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F211D397BE900D56699 /* Highlight+Helper.swift */; };
-		3A27F0C81FD9C33A00D84A57 /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F231D397BE900D56699 /* Highlight.swift */; };
 		3AD5EEB91D9433C100E42810 /* FolioReaderWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5EEB81D9433C100E42810 /* FolioReaderWebView.swift */; };
+		8FAB91F02537454000C5FB18 /* MenuItemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAB91CE25373C1C00C5FB18 /* MenuItemKit.framework */; };
+		8FAB91F12537454000C5FB18 /* MenuItemKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAB91CE25373C1C00C5FB18 /* MenuItemKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FAB91F42537454D00C5FB18 /* ZFDragableModalTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAB91DA2537413D00C5FB18 /* ZFDragableModalTransition.framework */; };
+		8FAB91F52537454D00C5FB18 /* ZFDragableModalTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAB91DA2537413D00C5FB18 /* ZFDragableModalTransition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FAB91F72537456B00C5FB18 /* MenuItemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAB91CE25373C1C00C5FB18 /* MenuItemKit.framework */; };
+		8FAB9205253747A600C5FB18 /* FolioReaderKitUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB9204253747A600C5FB18 /* FolioReaderKitUnitTests.swift */; };
+		8FAB9207253747A600C5FB18 /* FolioReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */; };
+		8FEF29DF25374B0800A130CA /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCB1D0388EF003B4CCD /* AEXML.framework */; };
+		8FEF29E025374B0800A130CA /* AEXML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCB1D0388EF003B4CCD /* AEXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FEF29E625374D2800A130CA /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF29E525374D2800A130CA /* FontBlaster.swift */; };
 		B0D6990F1D035FA2003B4CCD /* FolioReaderKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D6990E1D035FA2003B4CCD /* FolioReaderKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0D699161D035FA2003B4CCD /* FolioReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */; };
-		B0D6991B1D035FA2003B4CCD /* FolioReaderKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D6991A1D035FA2003B4CCD /* FolioReaderKitTests.swift */; };
 		B0D69CC81D0387F7003B4CCD /* HADiscreteSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D69C441D0387F7003B4CCD /* HADiscreteSlider.swift */; };
 		B0D69CC91D0387F7003B4CCD /* SMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D69C461D0387F7003B4CCD /* SMSegment.swift */; };
 		B0D69CCA1D0387F7003B4CCD /* SMSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D69C471D0387F7003B4CCD /* SMSegmentView.swift */; };
-		B0D69CD11D0388EF003B4CCD /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCB1D0388EF003B4CCD /* AEXML.framework */; };
-		B0D69CD21D0388EF003B4CCD /* FontBlaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCC1D0388EF003B4CCD /* FontBlaster.framework */; };
-		B0D69CD51D0388EF003B4CCD /* ZFDragableModalTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCF1D0388EF003B4CCD /* ZFDragableModalTransition.framework */; };
 		B0D69CD61D0388EF003B4CCD /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CD01D0388EF003B4CCD /* ZipArchive.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B0D699171D035FA2003B4CCD /* PBXContainerItemProxy */ = {
+		8FAB91CD25373C1C00C5FB18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FAB91C925373C1C00C5FB18 /* MenuItemKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E0EFAE4A1C49F99300334D78;
+			remoteInfo = MenuItemKit;
+		};
+		8FAB91D92537413D00C5FB18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FAB91D52537413C00C5FB18 /* ZFDragableModalTransition.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4553439E1C27441F0013DD4D;
+			remoteInfo = "ZFDragableModalTransition-iOS";
+		};
+		8FAB9208253747A600C5FB18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B0D699021D035FA1003B4CCD /* Project object */;
 			proxyType = 1;
@@ -124,9 +104,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8FAB91F22537454000C5FB18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8FAB91F12537454000C5FB18 /* MenuItemKit.framework in Embed Frameworks */,
+				8FEF29E025374B0800A130CA /* AEXML.framework in Embed Frameworks */,
+				8FAB91F52537454D00C5FB18 /* ZFDragableModalTransition.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A41E8902031E22300A8F70C /* MediaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
-		1A65DDCB1DA73F8D0033C277 /* MenuItemKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MenuItemKit.framework; path = Carthage/Build/iOS/MenuItemKit.framework; sourceTree = "<group>"; };
 		1A65DDD01DA744190033C277 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		1A65DDD11DA744190033C277 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		1A65DDD41DA744410033C277 /* QuoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteImage.swift; sourceTree = "<group>"; };
@@ -182,44 +177,42 @@
 		3A27F08A1FD9BE5800D84A57 /* FolioReaderUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolioReaderUserDefaults.swift; sourceTree = "<group>"; };
 		3A27F08B1FD9BE5800D84A57 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3AD5EEB81D9433C100E42810 /* FolioReaderWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolioReaderWebView.swift; sourceTree = "<group>"; };
+		8FAB91C925373C1C00C5FB18 /* MenuItemKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MenuItemKit.xcodeproj; path = Carthage/Checkouts/MenuItemKit/MenuItemKit.xcodeproj; sourceTree = "<group>"; };
+		8FAB91D52537413C00C5FB18 /* ZFDragableModalTransition.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZFDragableModalTransition.xcodeproj; path = Carthage/Checkouts/ZFDragableModalTransition/ZFDragableModalTransition.xcodeproj; sourceTree = "<group>"; };
+		8FAB9202253747A600C5FB18 /* FolioReaderKitUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolioReaderKitUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FAB9204253747A600C5FB18 /* FolioReaderKitUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderKitUnitTests.swift; sourceTree = "<group>"; };
+		8FAB9206253747A600C5FB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEF29E525374D2800A130CA /* FontBlaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBlaster.swift; sourceTree = "<group>"; };
 		B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FolioReaderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D6990E1D035FA2003B4CCD /* FolioReaderKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FolioReaderKit.h; sourceTree = "<group>"; };
 		B0D699101D035FA2003B4CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0D699151D035FA2003B4CCD /* FolioReaderKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolioReaderKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0D6991A1D035FA2003B4CCD /* FolioReaderKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderKitTests.swift; sourceTree = "<group>"; };
-		B0D6991C1D035FA2003B4CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0D69C441D0387F7003B4CCD /* HADiscreteSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HADiscreteSlider.swift; sourceTree = "<group>"; };
 		B0D69C461D0387F7003B4CCD /* SMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSegment.swift; sourceTree = "<group>"; };
 		B0D69C471D0387F7003B4CCD /* SMSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSegmentView.swift; sourceTree = "<group>"; };
 		B0D69CCB1D0388EF003B4CCD /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEXML.framework; path = Carthage/Build/iOS/AEXML.framework; sourceTree = "<group>"; };
-		B0D69CCC1D0388EF003B4CCD /* FontBlaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontBlaster.framework; path = Carthage/Build/iOS/FontBlaster.framework; sourceTree = "<group>"; };
-		B0D69CCD1D0388EF003B4CCD /* JSQWebViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQWebViewController.framework; path = Carthage/Build/iOS/JSQWebViewController.framework; sourceTree = "<group>"; };
-		B0D69CCF1D0388EF003B4CCD /* ZFDragableModalTransition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZFDragableModalTransition.framework; path = Carthage/Build/iOS/ZFDragableModalTransition.framework; sourceTree = "<group>"; };
 		B0D69CD01D0388EF003B4CCD /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipArchive.framework; path = Carthage/Build/iOS/ZipArchive.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8FAB91FF253747A600C5FB18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAB9207253747A600C5FB18 /* FolioReaderKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0D699071D035FA2003B4CCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A65DDCC1DA73F8E0033C277 /* MenuItemKit.framework in Frameworks */,
-				B0D69CD11D0388EF003B4CCD /* AEXML.framework in Frameworks */,
-				B0D69CD21D0388EF003B4CCD /* FontBlaster.framework in Frameworks */,
-				B0D69CD51D0388EF003B4CCD /* ZFDragableModalTransition.framework in Frameworks */,
+				8FAB91F42537454D00C5FB18 /* ZFDragableModalTransition.framework in Frameworks */,
+				8FAB91F72537456B00C5FB18 /* MenuItemKit.framework in Frameworks */,
 				B0D69CD61D0388EF003B4CCD /* ZipArchive.framework in Frameworks */,
+				8FEF29DF25374B0800A130CA /* AEXML.framework in Frameworks */,
+				8FAB91F02537454000C5FB18 /* MenuItemKit.framework in Frameworks */,
 				1A65DDD21DA744190033C277 /* Realm.framework in Frameworks */,
 				1A65DDD31DA744190033C277 /* RealmSwift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0D699121D035FA2003B4CCD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A27F0C51FD9C31E00D84A57 /* Realm.framework in Frameworks */,
-				3A27F0C61FD9C31E00D84A57 /* RealmSwift.framework in Frameworks */,
-				B0D699161D035FA2003B4CCD /* FolioReaderKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +224,6 @@
 			children = (
 				1A65DDD01DA744190033C277 /* Realm.framework */,
 				1A65DDD11DA744190033C277 /* RealmSwift.framework */,
-				1A65DDCB1DA73F8D0033C277 /* MenuItemKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -360,12 +352,39 @@
 			path = Raleway;
 			sourceTree = "<group>";
 		};
+		8FAB91CA25373C1C00C5FB18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FAB91CE25373C1C00C5FB18 /* MenuItemKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FAB91D62537413C00C5FB18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FAB91DA2537413D00C5FB18 /* ZFDragableModalTransition.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FAB9203253747A600C5FB18 /* FolioReaderKitUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FAB9204253747A600C5FB18 /* FolioReaderKitUnitTests.swift */,
+				8FAB9206253747A600C5FB18 /* Info.plist */,
+			);
+			path = FolioReaderKitUnitTests;
+			sourceTree = "<group>";
+		};
 		B0D699011D035FA1003B4CCD = {
 			isa = PBXGroup;
 			children = (
+				8FAB91D52537413C00C5FB18 /* ZFDragableModalTransition.xcodeproj */,
+				8FAB91C925373C1C00C5FB18 /* MenuItemKit.xcodeproj */,
 				1A9590161D397CAF00D56699 /* FolioReaderKit.podspec */,
 				B0D6990D1D035FA2003B4CCD /* FolioReaderKit */,
-				B0D699191D035FA2003B4CCD /* FolioReaderKitTests */,
+				8FAB9203253747A600C5FB18 /* FolioReaderKitUnitTests */,
 				B0D6990C1D035FA2003B4CCD /* Products */,
 				1A65DDCA1DA73F8C0033C277 /* Frameworks */,
 			);
@@ -375,7 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */,
-				B0D699151D035FA2003B4CCD /* FolioReaderKitTests.xctest */,
+				8FAB9202253747A600C5FB18 /* FolioReaderKitUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -388,26 +407,15 @@
 				B0D69B501D0365AC003B4CCD /* Frameworks */,
 				B0D6990E1D035FA2003B4CCD /* FolioReaderKit.h */,
 				B0D699101D035FA2003B4CCD /* Info.plist */,
+				8FEF29E525374D2800A130CA /* FontBlaster.swift */,
 			);
 			path = FolioReaderKit;
-			sourceTree = "<group>";
-		};
-		B0D699191D035FA2003B4CCD /* FolioReaderKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				B0D6991A1D035FA2003B4CCD /* FolioReaderKitTests.swift */,
-				B0D6991C1D035FA2003B4CCD /* Info.plist */,
-			);
-			path = FolioReaderKitTests;
 			sourceTree = "<group>";
 		};
 		B0D69B501D0365AC003B4CCD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B0D69CCB1D0388EF003B4CCD /* AEXML.framework */,
-				B0D69CCC1D0388EF003B4CCD /* FontBlaster.framework */,
-				B0D69CCD1D0388EF003B4CCD /* JSQWebViewController.framework */,
-				B0D69CCF1D0388EF003B4CCD /* ZFDragableModalTransition.framework */,
 				B0D69CD01D0388EF003B4CCD /* ZipArchive.framework */,
 			);
 			name = Frameworks;
@@ -455,6 +463,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8FAB9201253747A600C5FB18 /* FolioReaderKitUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FAB920A253747A600C5FB18 /* Build configuration list for PBXNativeTarget "FolioReaderKitUnitTests" */;
+			buildPhases = (
+				8FAB91FE253747A600C5FB18 /* Sources */,
+				8FAB91FF253747A600C5FB18 /* Frameworks */,
+				8FAB9200253747A600C5FB18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FAB9209253747A600C5FB18 /* PBXTargetDependency */,
+			);
+			name = FolioReaderKitUnitTests;
+			productName = FolioReaderKitUnitTests;
+			productReference = 8FAB9202253747A600C5FB18 /* FolioReaderKitUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B0D6990A1D035FA2003B4CCD /* FolioReaderKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D6991F1D035FA2003B4CCD /* Build configuration list for PBXNativeTarget "FolioReaderKit" */;
@@ -463,6 +489,7 @@
 				B0D699071D035FA2003B4CCD /* Frameworks */,
 				B0D699081D035FA2003B4CCD /* Headers */,
 				B0D699091D035FA2003B4CCD /* Resources */,
+				8FAB91F22537454000C5FB18 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -473,64 +500,81 @@
 			productReference = B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B0D699141D035FA2003B4CCD /* FolioReaderKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0D699221D035FA2003B4CCD /* Build configuration list for PBXNativeTarget "FolioReaderKitTests" */;
-			buildPhases = (
-				B0D699111D035FA2003B4CCD /* Sources */,
-				B0D699121D035FA2003B4CCD /* Frameworks */,
-				B0D699131D035FA2003B4CCD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B0D699181D035FA2003B4CCD /* PBXTargetDependency */,
-			);
-			name = FolioReaderKitTests;
-			productName = FolioReaderKitTests;
-			productReference = B0D699151D035FA2003B4CCD /* FolioReaderKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B0D699021D035FA1003B4CCD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = FolioReader;
 				TargetAttributes = {
+					8FAB9201253747A600C5FB18 = {
+						CreatedOnToolsVersion = 12.0.1;
+						DevelopmentTeam = 2XX7KYZJLM;
+						ProvisioningStyle = Automatic;
+					};
 					B0D6990A1D035FA2003B4CCD = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-					};
-					B0D699141D035FA2003B4CCD = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 32F2T8EJ6G;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
 			buildConfigurationList = B0D699051D035FA1003B4CCD /* Build configuration list for PBXProject "FolioReaderKit" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B0D699011D035FA1003B4CCD;
 			productRefGroup = B0D6990C1D035FA2003B4CCD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8FAB91CA25373C1C00C5FB18 /* Products */;
+					ProjectRef = 8FAB91C925373C1C00C5FB18 /* MenuItemKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 8FAB91D62537413C00C5FB18 /* Products */;
+					ProjectRef = 8FAB91D52537413C00C5FB18 /* ZFDragableModalTransition.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B0D6990A1D035FA2003B4CCD /* FolioReaderKit */,
-				B0D699141D035FA2003B4CCD /* FolioReaderKitTests */,
+				8FAB9201253747A600C5FB18 /* FolioReaderKitUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		8FAB91CE25373C1C00C5FB18 /* MenuItemKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MenuItemKit.framework;
+			remoteRef = 8FAB91CD25373C1C00C5FB18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8FAB91DA2537413D00C5FB18 /* ZFDragableModalTransition.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZFDragableModalTransition.framework;
+			remoteRef = 8FAB91D92537413D00C5FB18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		8FAB9200253747A600C5FB18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0D699091D035FA2003B4CCD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,16 +602,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0D699131D035FA2003B4CCD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8FAB91FE253747A600C5FB18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAB9205253747A600C5FB18 /* FolioReaderKitUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0D699061D035FA2003B4CCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -603,6 +648,7 @@
 				1A958F911D397BE900D56699 /* FRBook.swift in Sources */,
 				1A958F941D397BE900D56699 /* FRMetadata.swift in Sources */,
 				1A9590131D397BE900D56699 /* ScrollScrubber.swift in Sources */,
+				8FEF29E625374D2800A130CA /* FontBlaster.swift in Sources */,
 				B0D69CC81D0387F7003B4CCD /* HADiscreteSlider.swift in Sources */,
 				1A65DDD51DA744410033C277 /* QuoteImage.swift in Sources */,
 				1A958F961D397BE900D56699 /* FRResources.swift in Sources */,
@@ -611,65 +657,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0D699111D035FA2003B4CCD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A27F0A31FD9C24A00D84A57 /* FRSmilElement.swift in Sources */,
-				3A27F0A11FD9C24A00D84A57 /* FRResource.swift in Sources */,
-				3A27F0BC1FD9C25500D84A57 /* FolioReaderQuoteShare.swift in Sources */,
-				3A27F0B01FD9C25500D84A57 /* FolioReaderAudioPlayer.swift in Sources */,
-				3A27F0A41FD9C24A00D84A57 /* FRSmils.swift in Sources */,
-				3A27F0B31FD9C25500D84A57 /* FolioReaderChapterListCell.swift in Sources */,
-				3A27F0BD1FD9C25500D84A57 /* FolioReaderSharingProvider.swift in Sources */,
-				B0D6991B1D035FA2003B4CCD /* FolioReaderKitTests.swift in Sources */,
-				3A27F0BF1FD9C25500D84A57 /* FolioReaderWebView.swift in Sources */,
-				1AC255CF220217DF00841FA2 /* MediaType.swift in Sources */,
-				1AC255D22202191F00841FA2 /* SMSegmentView.swift in Sources */,
-				3A27F0BA1FD9C25500D84A57 /* FolioReaderPageIndicator.swift in Sources */,
-				3A27F0A51FD9C24A00D84A57 /* FRSpine.swift in Sources */,
-				3A27F0B81FD9C25500D84A57 /* FolioReaderKit.swift in Sources */,
-				3A27F0C21FD9C25C00D84A57 /* PageViewController.swift in Sources */,
-				3A27F0A01FD9C24A00D84A57 /* FRMetadata.swift in Sources */,
-				3A27F0B21FD9C25500D84A57 /* FolioReaderChapterList.swift in Sources */,
-				3A27F0B41FD9C25500D84A57 /* FolioReaderConfig.swift in Sources */,
-				3A27F0B61FD9C25500D84A57 /* FolioReaderFontsMenu.swift in Sources */,
-				3A27F0AF1FD9C25500D84A57 /* Extensions.swift in Sources */,
-				3A27F0C81FD9C33A00D84A57 /* Highlight.swift in Sources */,
-				3A27F0B51FD9C25500D84A57 /* FolioReaderContainer.swift in Sources */,
-				3A27F0C71FD9C33A00D84A57 /* Highlight+Helper.swift in Sources */,
-				3A27F0B11FD9C25500D84A57 /* FolioReaderCenter.swift in Sources */,
-				3A27F0A61FD9C24A00D84A57 /* FRTocReference.swift in Sources */,
-				3A27F0BE1FD9C25500D84A57 /* FolioReaderUserDefaults.swift in Sources */,
-				3A27F0B91FD9C25500D84A57 /* FolioReaderPage.swift in Sources */,
-				3A27F09D1FD9C24A00D84A57 /* FRBook.swift in Sources */,
-				1AC255D42202195200841FA2 /* HADiscreteSlider.swift in Sources */,
-				3A27F0BB1FD9C25500D84A57 /* FolioReaderPlayerMenu.swift in Sources */,
-				1AC255D52202196D00841FA2 /* FolioReaderAddHighlightNote.swift in Sources */,
-				3A27F0C41FD9C25C00D84A57 /* ScrollScrubber.swift in Sources */,
-				3A27F0C31FD9C25C00D84A57 /* QuoteImage.swift in Sources */,
-				3A27F0B71FD9C25500D84A57 /* FolioReaderHighlightList.swift in Sources */,
-				3A27F09E1FD9C24A00D84A57 /* FREpubParser.swift in Sources */,
-				1AC255D32202193700841FA2 /* SMSegment.swift in Sources */,
-				3A27F0A21FD9C24A00D84A57 /* FRResources.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B0D699181D035FA2003B4CCD /* PBXTargetDependency */ = {
+		8FAB9209253747A600C5FB18 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B0D6990A1D035FA2003B4CCD /* FolioReaderKit */;
-			targetProxy = B0D699171D035FA2003B4CCD /* PBXContainerItemProxy */;
+			targetProxy = 8FAB9208253747A600C5FB18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8FAB920B253747A600C5FB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XX7KYZJLM;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FolioReaderKitUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = jha.FolioReaderKitUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FAB920C253747A600C5FB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XX7KYZJLM;
+				"EXCLUDED_ARCHS[sdk=*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FolioReaderKitUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = jha.FolioReaderKitUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B0D6991D1D035FA2003B4CCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -689,6 +741,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -700,6 +753,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -714,7 +768,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -730,6 +784,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -749,6 +804,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -760,6 +816,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -768,7 +825,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -790,14 +847,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FolioReaderKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.folioreader.FolioReaderKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -815,13 +874,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FolioReaderKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.folioreader.FolioReaderKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -830,43 +890,18 @@
 			};
 			name = Release;
 		};
-		B0D699231D035FA2003B4CCD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 32F2T8EJ6G;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = FolioReaderKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.folioreader.FolioReaderKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		B0D699241D035FA2003B4CCD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 32F2T8EJ6G;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = FolioReaderKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.folioreader.FolioReaderKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8FAB920A253747A600C5FB18 /* Build configuration list for PBXNativeTarget "FolioReaderKitUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FAB920B253747A600C5FB18 /* Debug */,
+				8FAB920C253747A600C5FB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B0D699051D035FA1003B4CCD /* Build configuration list for PBXProject "FolioReaderKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -881,15 +916,6 @@
 			buildConfigurations = (
 				B0D699201D035FA2003B4CCD /* Debug */,
 				B0D699211D035FA2003B4CCD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0D699221D035FA2003B4CCD /* Build configuration list for PBXNativeTarget "FolioReaderKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0D699231D035FA2003B4CCD /* Debug */,
-				B0D699241D035FA2003B4CCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
