@@ -66,11 +66,12 @@
 		8FAB91F42537454D00C5FB18 /* ZFDragableModalTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAB91DA2537413D00C5FB18 /* ZFDragableModalTransition.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8FAB91F52537454D00C5FB18 /* ZFDragableModalTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAB91DA2537413D00C5FB18 /* ZFDragableModalTransition.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8FAB91F72537456B00C5FB18 /* MenuItemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAB91CE25373C1C00C5FB18 /* MenuItemKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8FDD9A2B253887C0003EECC3 /* FolioReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */; };
+		8FDD9A372538883E003EECC3 /* FolioReaderWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD9A362538883E003EECC3 /* FolioReaderWebViewTests.swift */; };
+		8FDD9A3C25388A5F003EECC3 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */ = {isa = PBXBuildFile; fileRef = 8FDD9A3B25388A5F003EECC3 /* The Adventures Of Sherlock Holmes - Adventure I.epub */; };
 		8FEF29DF25374B0800A130CA /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCB1D0388EF003B4CCD /* AEXML.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8FEF29E025374B0800A130CA /* AEXML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCB1D0388EF003B4CCD /* AEXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FEF29E625374D2800A130CA /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF29E525374D2800A130CA /* FontBlaster.swift */; };
-		8FF27FF025375D4800FD9963 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF27FEF25375D4800FD9963 /* UnitTests.swift */; };
-		8FF27FF225375D4800FD9963 /* FolioReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */; };
 		8FF2800D2537634C00FD9963 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD01DA744190033C277 /* Realm.framework */; };
 		8FF2800E2537634C00FD9963 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD01DA744190033C277 /* Realm.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8FF2800F2537634E00FD9963 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD11DA744190033C277 /* RealmSwift.framework */; };
@@ -98,7 +99,7 @@
 			remoteGlobalIDString = 4553439E1C27441F0013DD4D;
 			remoteInfo = "ZFDragableModalTransition-iOS";
 		};
-		8FF27FF325375D4800FD9963 /* PBXContainerItemProxy */ = {
+		8FDD9A2C253887C0003EECC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B0D699021D035FA1003B4CCD /* Project object */;
 			proxyType = 1;
@@ -185,10 +186,11 @@
 		3AD5EEB81D9433C100E42810 /* FolioReaderWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolioReaderWebView.swift; sourceTree = "<group>"; };
 		8FAB91C925373C1C00C5FB18 /* MenuItemKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MenuItemKit.xcodeproj; path = Carthage/Checkouts/MenuItemKit/MenuItemKit.xcodeproj; sourceTree = "<group>"; };
 		8FAB91D52537413C00C5FB18 /* ZFDragableModalTransition.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZFDragableModalTransition.xcodeproj; path = Carthage/Checkouts/ZFDragableModalTransition/ZFDragableModalTransition.xcodeproj; sourceTree = "<group>"; };
+		8FDD9A26253887C0003EECC3 /* FolioReaderKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolioReaderKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDD9A2A253887C0003EECC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FDD9A362538883E003EECC3 /* FolioReaderWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderWebViewTests.swift; sourceTree = "<group>"; };
+		8FDD9A3B25388A5F003EECC3 /* The Adventures Of Sherlock Holmes - Adventure I.epub */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Adventures Of Sherlock Holmes - Adventure I.epub"; path = "Example/Shared/Sample eBooks/The Adventures Of Sherlock Holmes - Adventure I.epub"; sourceTree = SOURCE_ROOT; };
 		8FEF29E525374D2800A130CA /* FontBlaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBlaster.swift; sourceTree = "<group>"; };
-		8FF27FED25375D4800FD9963 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FF27FEF25375D4800FD9963 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
-		8FF27FF125375D4800FD9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FolioReaderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D6990E1D035FA2003B4CCD /* FolioReaderKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FolioReaderKit.h; sourceTree = "<group>"; };
 		B0D699101D035FA2003B4CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,11 +202,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8FF27FEA25375D4800FD9963 /* Frameworks */ = {
+		8FDD9A23253887C0003EECC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FF27FF225375D4800FD9963 /* FolioReaderKit.framework in Frameworks */,
+				8FDD9A2B253887C0003EECC3 /* FolioReaderKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,13 +376,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8FF27FEE25375D4800FD9963 /* UnitTests */ = {
+		8FDD9A27253887C0003EECC3 /* FolioReaderKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				8FF27FEF25375D4800FD9963 /* UnitTests.swift */,
-				8FF27FF125375D4800FD9963 /* Info.plist */,
+				8FDD9A3A25388A40003EECC3 /* Resources */,
+				8FDD9A2A253887C0003EECC3 /* Info.plist */,
+				8FDD9A362538883E003EECC3 /* FolioReaderWebViewTests.swift */,
 			);
-			path = UnitTests;
+			path = FolioReaderKitTests;
+			sourceTree = "<group>";
+		};
+		8FDD9A3A25388A40003EECC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8FDD9A3B25388A5F003EECC3 /* The Adventures Of Sherlock Holmes - Adventure I.epub */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B0D699011D035FA1003B4CCD = {
@@ -390,7 +401,7 @@
 				8FAB91C925373C1C00C5FB18 /* MenuItemKit.xcodeproj */,
 				1A9590161D397CAF00D56699 /* FolioReaderKit.podspec */,
 				B0D6990D1D035FA2003B4CCD /* FolioReaderKit */,
-				8FF27FEE25375D4800FD9963 /* UnitTests */,
+				8FDD9A27253887C0003EECC3 /* FolioReaderKitTests */,
 				B0D6990C1D035FA2003B4CCD /* Products */,
 				1A65DDCA1DA73F8C0033C277 /* Frameworks */,
 			);
@@ -400,7 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */,
-				8FF27FED25375D4800FD9963 /* UnitTests.xctest */,
+				8FDD9A26253887C0003EECC3 /* FolioReaderKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -469,22 +480,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8FF27FEC25375D4800FD9963 /* UnitTests */ = {
+		8FDD9A25253887C0003EECC3 /* FolioReaderKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FF27FF525375D4800FD9963 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildConfigurationList = 8FDD9A2E253887C0003EECC3 /* Build configuration list for PBXNativeTarget "FolioReaderKitTests" */;
 			buildPhases = (
-				8FF27FE925375D4800FD9963 /* Sources */,
-				8FF27FEA25375D4800FD9963 /* Frameworks */,
-				8FF27FEB25375D4800FD9963 /* Resources */,
+				8FDD9A22253887C0003EECC3 /* Sources */,
+				8FDD9A23253887C0003EECC3 /* Frameworks */,
+				8FDD9A24253887C0003EECC3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8FF27FF425375D4800FD9963 /* PBXTargetDependency */,
+				8FDD9A2D253887C0003EECC3 /* PBXTargetDependency */,
 			);
-			name = UnitTests;
-			productName = UnitTests;
-			productReference = 8FF27FED25375D4800FD9963 /* UnitTests.xctest */;
+			name = FolioReaderKitTests;
+			productName = FolioReaderKitTests;
+			productReference = 8FDD9A26253887C0003EECC3 /* FolioReaderKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B0D6990A1D035FA2003B4CCD /* FolioReaderKit */ = {
@@ -516,7 +527,7 @@
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = FolioReader;
 				TargetAttributes = {
-					8FF27FEC25375D4800FD9963 = {
+					8FDD9A25253887C0003EECC3 = {
 						CreatedOnToolsVersion = 12.0.1;
 						DevelopmentTeam = 2XX7KYZJLM;
 						ProvisioningStyle = Automatic;
@@ -551,7 +562,7 @@
 			projectRoot = "";
 			targets = (
 				B0D6990A1D035FA2003B4CCD /* FolioReaderKit */,
-				8FF27FEC25375D4800FD9963 /* UnitTests */,
+				8FDD9A25253887C0003EECC3 /* FolioReaderKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -574,10 +585,11 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8FF27FEB25375D4800FD9963 /* Resources */ = {
+		8FDD9A24253887C0003EECC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FDD9A3C25388A5F003EECC3 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,11 +623,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8FF27FE925375D4800FD9963 /* Sources */ = {
+		8FDD9A22253887C0003EECC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FF27FF025375D4800FD9963 /* UnitTests.swift in Sources */,
+				8FDD9A372538883E003EECC3 /* FolioReaderWebViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,15 +678,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8FF27FF425375D4800FD9963 /* PBXTargetDependency */ = {
+		8FDD9A2D253887C0003EECC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B0D6990A1D035FA2003B4CCD /* FolioReaderKit */;
-			targetProxy = 8FF27FF325375D4800FD9963 /* PBXContainerItemProxy */;
+			targetProxy = 8FDD9A2C253887C0003EECC3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		8FF27FF625375D4800FD9963 /* Debug */ = {
+		8FDD9A2F253887C0003EECC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -685,12 +697,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XX7KYZJLM;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = UnitTests/Info.plist;
+				INFOPLIST_FILE = FolioReaderKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = jha.UnitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jha.FolioReaderKitTests;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
@@ -698,7 +711,7 @@
 			};
 			name = Debug;
 		};
-		8FF27FF725375D4800FD9963 /* Release */ = {
+		8FDD9A30253887C0003EECC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -709,11 +722,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XX7KYZJLM;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = UnitTests/Info.plist;
+				INFOPLIST_FILE = FolioReaderKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = jha.UnitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jha.FolioReaderKitTests;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -904,11 +918,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8FF27FF525375D4800FD9963 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+		8FDD9A2E253887C0003EECC3 /* Build configuration list for PBXNativeTarget "FolioReaderKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FF27FF625375D4800FD9963 /* Debug */,
-				8FF27FF725375D4800FD9963 /* Release */,
+				8FDD9A2F253887C0003EECC3 /* Debug */,
+				8FDD9A30253887C0003EECC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

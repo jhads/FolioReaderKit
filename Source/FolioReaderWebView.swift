@@ -358,6 +358,7 @@ open class FolioReaderWebView: UIWebView {
         // Forces text selection clearing
         // @NOTE: this doesn't seem to always work
         
+        self.endEditing(true)
         self.isUserInteractionEnabled = false
         self.isUserInteractionEnabled = true
     }
