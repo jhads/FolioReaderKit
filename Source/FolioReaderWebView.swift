@@ -355,12 +355,8 @@ open class FolioReaderWebView: UIWebView {
     // MARK: WebView
     
     func clearTextSelection() {
-        // Forces text selection clearing
-        // @NOTE: this doesn't seem to always work
-        
+        // Forces text selection clearing        
         self.endEditing(true)
-        self.isUserInteractionEnabled = false
-        self.isUserInteractionEnabled = true
     }
     
     func setupScrollDirection() {
