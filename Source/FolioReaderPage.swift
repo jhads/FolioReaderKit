@@ -192,7 +192,7 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
     /// Encodes string to HTML code representations, considering diacritics.
     private func encodeToHtml(_ string: String) -> String {
         // fixes highlight range not found when there are characters incompatible with HTML ASCII
-        string.htmlEscape(decimal: true)
+        string.htmlEscape(decimal: false)
     }
 
     // MARK: - UIWebView Delegate
