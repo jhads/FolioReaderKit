@@ -71,7 +71,16 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
 
-        NotificationCenter.default.addObserver(self, selector: #selector(refreshPageMode), name: NSNotification.Name(rawValue: "needRefreshPageMode"), object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(refreshPageMode),
+            name: NSNotification.Name(rawValue: "needRefreshPageMode"),
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(willHideMenu),
+            name: UIMenuController.willHideMenuNotification,
+            object: nil)
     }
 
     public func setup(withReaderContainer readerContainer: FolioReaderContainer) {
@@ -120,6 +129,11 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
 
         webView?.setupScrollDirection()
         webView?.frame = webViewFrame()
+    }
+    
+    /// Observes dismissal action for UIMenuController.
+    @objc private func willHideMenu() {
+        self.shouldShowBar = true
     }
 
     func webViewFrame() -> CGRect {
@@ -391,7 +405,7 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
             let dispatchTime = (DispatchTime.now() + (Double(Int64(delay)) / Double(NSEC_PER_SEC)))
             
             DispatchQueue.main.asyncAfter(deadline: dispatchTime, execute: {
-                if (self.shouldShowBar == true && self.menuIsVisible == false) {
+                if (self.shouldShowBar == true && UIMenuController.shared.isMenuVisible == false) {
                     self.folioReader.readerCenter?.toggleBars()
                 }
             })
