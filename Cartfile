@@ -3,3 +3,4 @@ github "cxa/MenuItemKit"
 github "alexpopov/ZFDragableModalTransition" "merge-carthage-into-zoonooz"
 github "tadija/AEXML"
 github "realm/realm-cocoa"
+github "alexaubry/HTMLString" ~> 6.0
