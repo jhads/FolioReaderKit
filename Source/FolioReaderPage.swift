@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 import MenuItemKit
-import HTMLString
+import HTMLEntities
 
 /// Protocol which is used from `FolioReaderPage`s.
 @objc public protocol FolioReaderPageDelegate: class {
@@ -192,7 +192,7 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
     /// Encodes string to HTML code representations, considering diacritics.
     private func encodeToHtml(_ string: String) -> String {
         // fixes highlight range not found when there are characters incompatible with HTML ASCII
-        string.addingASCIIEntities()
+        string.htmlEscape(decimal: true)
     }
 
     // MARK: - UIWebView Delegate

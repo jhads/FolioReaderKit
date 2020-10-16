@@ -1,5 +1,5 @@
+github "Kitura/swift-html-entities" "3.0.200"
 github "ZipArchive/ZipArchive" "v2.1.1"
-github "alexaubry/HTMLString" "6.0.1"
 github "alexpopov/ZFDragableModalTransition" "8da951efb4202385630d1cf7104b60d1208f807e"
 github "cxa/MenuItemKit" "4.0.1"
 github "realm/realm-cocoa" "v5.5.0"
