@@ -191,21 +191,8 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
     
     /// Encodes string to HTML code representations, considering diacritics.
     private func encodeToHtml(_ string: String) -> String {
-        // fixes highlight range not found when there's unicode symbol (')
-        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
-            .documentType: NSAttributedString.DocumentType.html,
-            .characterEncoding: String.Encoding.utf8.rawValue
-        ]
-        guard let data = string.data(using: .nonLossyASCII),
-              let encodedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
-            return string
-        }
-        return replaceUnicodeByHTML(encodedString.string)
-    }
-    
-    /// Replaces unicode occurrencies by HTML code representations.
-    private func replaceUnicodeByHTML(_ string: String) -> String {
-        string.replacingOccurrences(of: "\\u2019", with: "&#x2019;")
+        // fixes highlight range not found when there are characters incompatible with HTML ASCII
+        string.addingASCIIEntities()
     }
 
     // MARK: - UIWebView Delegate
