@@ -186,6 +186,7 @@
 		3AD5EEB81D9433C100E42810 /* FolioReaderWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolioReaderWebView.swift; sourceTree = "<group>"; };
 		8FAB91C925373C1C00C5FB18 /* MenuItemKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MenuItemKit.xcodeproj; path = Carthage/Checkouts/MenuItemKit/MenuItemKit.xcodeproj; sourceTree = "<group>"; };
 		8FAB91D52537413C00C5FB18 /* ZFDragableModalTransition.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZFDragableModalTransition.xcodeproj; path = Carthage/Checkouts/ZFDragableModalTransition/ZFDragableModalTransition.xcodeproj; sourceTree = "<group>"; };
+		8FBB51612539B68C00105163 /* HTMLString.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = HTMLString.framework.dSYM; path = Carthage/Build/iOS/HTMLString.framework.dSYM; sourceTree = "<group>"; };
 		8FDD9A26253887C0003EECC3 /* FolioReaderKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolioReaderKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDD9A2A253887C0003EECC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FDD9A362538883E003EECC3 /* FolioReaderWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderWebViewTests.swift; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 		1A65DDCA1DA73F8C0033C277 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FBB51612539B68C00105163 /* HTMLString.framework.dSYM */,
 				1A65DDD01DA744190033C277 /* Realm.framework */,
 				1A65DDD11DA744190033C277 /* RealmSwift.framework */,
 			);
