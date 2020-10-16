@@ -187,10 +187,10 @@
 		8FAB91C925373C1C00C5FB18 /* MenuItemKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MenuItemKit.xcodeproj; path = Carthage/Checkouts/MenuItemKit/MenuItemKit.xcodeproj; sourceTree = "<group>"; };
 		8FAB91D52537413C00C5FB18 /* ZFDragableModalTransition.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZFDragableModalTransition.xcodeproj; path = Carthage/Checkouts/ZFDragableModalTransition/ZFDragableModalTransition.xcodeproj; sourceTree = "<group>"; };
 		8FBB51612539B68C00105163 /* HTMLString.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = HTMLString.framework.dSYM; path = Carthage/Build/iOS/HTMLString.framework.dSYM; sourceTree = "<group>"; };
+		8FBB51652539B70E00105163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FDD9A26253887C0003EECC3 /* FolioReaderKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolioReaderKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FDD9A2A253887C0003EECC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FDD9A362538883E003EECC3 /* FolioReaderWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderWebViewTests.swift; sourceTree = "<group>"; };
-		8FDD9A3B25388A5F003EECC3 /* The Adventures Of Sherlock Holmes - Adventure I.epub */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Adventures Of Sherlock Holmes - Adventure I.epub"; path = "Example/Shared/Sample eBooks/The Adventures Of Sherlock Holmes - Adventure I.epub"; sourceTree = SOURCE_ROOT; };
+		8FDD9A3B25388A5F003EECC3 /* The Adventures Of Sherlock Holmes - Adventure I.epub */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Adventures Of Sherlock Holmes - Adventure I.epub"; path = "FolioReaderKitTests/Resource/The Adventures Of Sherlock Holmes - Adventure I.epub"; sourceTree = SOURCE_ROOT; };
 		8FEF29E525374D2800A130CA /* FontBlaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBlaster.swift; sourceTree = "<group>"; };
 		B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FolioReaderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D6990E1D035FA2003B4CCD /* FolioReaderKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FolioReaderKit.h; sourceTree = "<group>"; };
@@ -379,22 +379,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8FDD9A27253887C0003EECC3 /* FolioReaderKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				8FDD9A3A25388A40003EECC3 /* Resources */,
-				8FDD9A2A253887C0003EECC3 /* Info.plist */,
-				8FDD9A362538883E003EECC3 /* FolioReaderWebViewTests.swift */,
-			);
-			path = FolioReaderKitTests;
-			sourceTree = "<group>";
-		};
-		8FDD9A3A25388A40003EECC3 /* Resources */ = {
+		8FBB516C2539B84A00105163 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				8FDD9A3B25388A5F003EECC3 /* The Adventures Of Sherlock Holmes - Adventure I.epub */,
 			);
-			path = Resources;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8FDD9A27253887C0003EECC3 /* FolioReaderKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB516C2539B84A00105163 /* Resource */,
+				8FDD9A362538883E003EECC3 /* FolioReaderWebViewTests.swift */,
+				8FBB51652539B70E00105163 /* Info.plist */,
+			);
+			path = FolioReaderKitTests;
 			sourceTree = "<group>";
 		};
 		B0D699011D035FA1003B4CCD = {
