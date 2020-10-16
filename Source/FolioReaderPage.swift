@@ -158,7 +158,7 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
         }
 
         let highlights = Highlight.allByBookId(withConfiguration: self.readerConfig, bookId: bookId, andPage: pageNumber as NSNumber?)
-
+        
         if (highlights.count > 0) {
             for item in highlights {
                 let style = HighlightStyle.classForStyle(item.type)
@@ -172,7 +172,8 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
                 
                 var locator = item.contentPre + item.content
                 locator += item.contentPost
-                locator = Highlight.removeSentenceSpam(locator) /// Fix for Highlights
+
+                locator = Highlight.removeSentenceSpam(encodeToHtml(locator)) /// Fix for Highlights
                 
                 let range: NSRange = tempHtmlContent.range(of: locator, options: .literal)
                 
@@ -185,6 +186,25 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
             }
         }
         return tempHtmlContent as String
+    }
+    
+    /// Encodes string to HTML code representations, considering diacritics.
+    private func encodeToHtml(_ string: String) -> String {
+        // fixes highlight range not found when there's unicode symbol (')
+        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+            .documentType: NSAttributedString.DocumentType.html,
+            .characterEncoding: String.Encoding.utf8.rawValue
+        ]
+        guard let data = string.data(using: .nonLossyASCII),
+              let encodedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
+            return string
+        }
+        return replaceUnicodeByHTML(encodedString.string)
+    }
+    
+    /// Replaces unicode occurrencies by HTML code representations.
+    private func replaceUnicodeByHTML(_ string: String) -> String {
+        string.replacingOccurrences(of: "\\u2019", with: "&#x2019;")
     }
 
     // MARK: - UIWebView Delegate
@@ -459,11 +479,10 @@ open class FolioReaderPage: UICollectionViewCell, UIWebViewDelegate, UIGestureRe
      - returns: The element offset ready to scroll
      */
     func getAnchorOffset(_ anchor: String) -> CGFloat {
-        let horizontal = self.readerConfig.scrollDirection == .horizontal
-        if let strOffset = webView?.js("getAnchorOffset('\(anchor)', \(horizontal.description))") {
-            return CGFloat((strOffset as NSString).floatValue)
+        if let strOffset = webView?.js("document.getElementById('\(anchor)').offsetTop") {
+            return CGFloat((strOffset as NSString).floatValue) - CGFloat(100)
         }
-
+        
         return CGFloat(0)
     }
 
