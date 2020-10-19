@@ -404,10 +404,7 @@ open class FolioReaderWebView: WKWebView {
     
     func clearTextSelection() {
         // Forces text selection clearing
-        // @NOTE: this doesn't seem to always work
-        
-        self.isUserInteractionEnabled = false
-        self.isUserInteractionEnabled = true
+        self.endEditing(true)
     }
     
     func setupScrollDirection() {
