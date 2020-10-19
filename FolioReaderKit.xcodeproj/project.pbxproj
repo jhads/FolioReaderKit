@@ -102,6 +102,10 @@
 		3A27F0C71FD9C33A00D84A57 /* Highlight+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F211D397BE900D56699 /* Highlight+Helper.swift */; };
 		3A27F0C81FD9C33A00D84A57 /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F231D397BE900D56699 /* Highlight.swift */; };
 		3AD5EEB91D9433C100E42810 /* FolioReaderWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5EEB81D9433C100E42810 /* FolioReaderWebView.swift */; };
+		8F0657D4253DF511006DDCA2 /* String+HTMLEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0657D3253DF511006DDCA2 /* String+HTMLEntities.swift */; };
+		8F0657DA253DF537006DDCA2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0657D9253DF537006DDCA2 /* Utilities.swift */; };
+		8F0657DE253DF55D006DDCA2 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0657DD253DF55D006DDCA2 /* ParseError.swift */; };
+		8F0657E2253DF571006DDCA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0657E1253DF571006DDCA2 /* Constants.swift */; };
 		8F3C0650253DDE2600F55189 /* FolioReaderScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C064F253DDE2600F55189 /* FolioReaderScript.swift */; };
 		B0D6990F1D035FA2003B4CCD /* FolioReaderKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D6990E1D035FA2003B4CCD /* FolioReaderKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0D699161D035FA2003B4CCD /* FolioReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */; };
@@ -183,6 +187,10 @@
 		3A27F08A1FD9BE5800D84A57 /* FolioReaderUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolioReaderUserDefaults.swift; sourceTree = "<group>"; };
 		3A27F08B1FD9BE5800D84A57 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3AD5EEB81D9433C100E42810 /* FolioReaderWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolioReaderWebView.swift; sourceTree = "<group>"; };
+		8F0657D3253DF511006DDCA2 /* String+HTMLEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTMLEntities.swift"; sourceTree = "<group>"; };
+		8F0657D9253DF537006DDCA2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		8F0657DD253DF55D006DDCA2 /* ParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
+		8F0657E1253DF571006DDCA2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F3C064F253DDE2600F55189 /* FolioReaderScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderScript.swift; sourceTree = "<group>"; };
 		B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FolioReaderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D6990E1D035FA2003B4CCD /* FolioReaderKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FolioReaderKit.h; sourceTree = "<group>"; };
@@ -241,6 +249,7 @@
 		1A958F031D397BE900D56699 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8F0657D2253DF482006DDCA2 /* HTMLEntities */,
 				1A958F041D397BE900D56699 /* EPUBCore */,
 				1A958F1D1D397BE900D56699 /* Models */,
 				1A958F251D397BE900D56699 /* Resources */,
@@ -361,6 +370,17 @@
 				1A958F3B1D397BE900D56699 /* Raleway-Regular.ttf */,
 			);
 			path = Raleway;
+			sourceTree = "<group>";
+		};
+		8F0657D2253DF482006DDCA2 /* HTMLEntities */ = {
+			isa = PBXGroup;
+			children = (
+				8F0657D3253DF511006DDCA2 /* String+HTMLEntities.swift */,
+				8F0657D9253DF537006DDCA2 /* Utilities.swift */,
+				8F0657DD253DF55D006DDCA2 /* ParseError.swift */,
+				8F0657E1253DF571006DDCA2 /* Constants.swift */,
+			);
+			path = HTMLEntities;
 			sourceTree = "<group>";
 		};
 		B0D699011D035FA1003B4CCD = {
@@ -600,11 +620,15 @@
 				1A958F971D397BE900D56699 /* FRSmilElement.swift in Sources */,
 				1A41E8912031E22300A8F70C /* MediaType.swift in Sources */,
 				3A27F08E1FD9BE5800D84A57 /* Extensions.swift in Sources */,
+				8F0657E2253DF571006DDCA2 /* Constants.swift in Sources */,
+				8F0657DE253DF55D006DDCA2 /* ParseError.swift in Sources */,
 				1A958F9D1D397BE900D56699 /* FolioReaderChapterList.swift in Sources */,
 				1A958F951D397BE900D56699 /* FRResource.swift in Sources */,
+				8F0657D4253DF511006DDCA2 /* String+HTMLEntities.swift in Sources */,
 				1A958F9B1D397BE900D56699 /* FolioReaderAudioPlayer.swift in Sources */,
 				1A958F9E1D397BE900D56699 /* FolioReaderChapterListCell.swift in Sources */,
 				1A958F9A1D397BE900D56699 /* FRTocReference.swift in Sources */,
+				8F0657DA253DF537006DDCA2 /* Utilities.swift in Sources */,
 				1A958F911D397BE900D56699 /* FRBook.swift in Sources */,
 				1A958F941D397BE900D56699 /* FRMetadata.swift in Sources */,
 				1A9590131D397BE900D56699 /* ScrollScrubber.swift in Sources */,
