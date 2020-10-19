@@ -186,7 +186,7 @@ open class FolioReaderPage: UICollectionViewCell, WKNavigationDelegate, UIGestur
                 
                 var locator = item.contentPre + item.content
                 locator += item.contentPost
-                locator = Highlight.removeSentenceSpam(locator) /// Fix for Highlights
+                locator = Highlight.removeSentenceSpam(encodeToHtml(locator)) /// Fix for Highlights
                 
                 let range: NSRange = tempHtmlContent.range(of: locator, options: .literal)
                 
@@ -199,6 +199,12 @@ open class FolioReaderPage: UICollectionViewCell, WKNavigationDelegate, UIGestur
             }
         }
         return tempHtmlContent as String
+    }
+    
+    /// Encodes string to HTML code representations, considering diacritics.
+    private func encodeToHtml(_ string: String) -> String {
+        // fixes highlight range not found when there are characters incompatible with HTML ASCII
+        string.htmlEscape(decimal: false)
     }
 
     // MARK: - WKNavigation Delegate
