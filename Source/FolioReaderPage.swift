@@ -502,7 +502,7 @@ open class FolioReaderPage: UICollectionViewCell, WKNavigationDelegate, UIGestur
                 completion(CGFloat(0))
                 return
             }
-            completion(CGFloat((strOffset as NSString).floatValue))
+            completion(CGFloat((strOffset as NSString).floatValue) - CGFloat(100))
         }
     }
 
