@@ -378,23 +378,26 @@ open class FolioReaderAudioPlayer: NSObject {
         guard
             let readerCenter = self.folioReader.readerCenter,
             let currentPage = readerCenter.currentPage else {
-                return
+            return
         }
-
+        
         let playbackActiveClass = book.playbackActiveClass
-        currentPage.webView?.js("getSentenceWithIndex('\(playbackActiveClass)')") { sentence in
-            guard let sentence = sentence else {
-                if (readerCenter.isLastPage() == true) {
-                    self.stop()
-                } else {
-                    readerCenter.changePageToNext()
-                }
-                return
+        guard let sentence = currentPage.webView?.js("getSentenceWithIndex('\(playbackActiveClass)')") else {
+            if (readerCenter.isLastPage() == true) {
+                self.stop()
+            } else {
+                readerCenter.changePageToNext()
             }
-            guard let href = readerCenter.getCurrentChapter()?.href else { return }
-            // TODO QUESTION: The previous code made it possible to call `playText` with the parameter `href` being an empty string. Was that valid? should this logic be kept?
-            self.playText(href, text: sentence)
+            
+            return
         }
+        
+        guard let href = readerCenter.getCurrentChapter()?.href else {
+            return
+        }
+        
+        // TODO QUESTION: The previous code made it possible to call `playText` with the parameter `href` being an empty string. Was that valid? should this logic be kept?
+        self.playText(href, text: sentence)
     }
 
     func readCurrentSentence() {
@@ -449,38 +452,38 @@ open class FolioReaderAudioPlayer: NSObject {
      */
     func updateNowPlayingInfo() {
         var songInfo = [String: AnyObject]()
-
+        
         // Get book Artwork
         if let coverImage = self.book.coverImage, let artwork = UIImage(contentsOfFile: coverImage.fullHref) {
             let albumArt = MPMediaItemArtwork(image: artwork)
             songInfo[MPMediaItemPropertyArtwork] = albumArt
         }
-
+        
         // Get book title
         if let title = self.book.title {
             songInfo[MPMediaItemPropertyAlbumTitle] = title as AnyObject?
         }
-
+        
         // Get chapter name
         if let chapter = getCurrentChapterName() {
             songInfo[MPMediaItemPropertyTitle] = chapter as AnyObject?
         }
-
+        
         // Get author name
         if let author = self.book.metadata.creators.first {
             songInfo[MPMediaItemPropertyArtist] = author.name as AnyObject?
         }
-
+        
         // Set player times
         if let player = player , !isTextToSpeech {
             songInfo[MPMediaItemPropertyPlaybackDuration] = player.duration as AnyObject?
             songInfo[MPNowPlayingInfoPropertyPlaybackRate] = player.rate as AnyObject?
             songInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime ] = player.currentTime as AnyObject?
         }
-
+        
         // Set Audio Player info
         MPNowPlayingInfoCenter.default().nowPlayingInfo = songInfo
-
+        
         registerCommandsIfNeeded()
     }
 
