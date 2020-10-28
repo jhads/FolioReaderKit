@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A41E8912031E22300A8F70C /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E8902031E22300A8F70C /* MediaType.swift */; };
-		1A65DDCC1DA73F8E0033C277 /* MenuItemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDCB1DA73F8D0033C277 /* MenuItemKit.framework */; };
-		1A65DDD21DA744190033C277 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD01DA744190033C277 /* Realm.framework */; };
-		1A65DDD31DA744190033C277 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD11DA744190033C277 /* RealmSwift.framework */; };
 		1A65DDD51DA744410033C277 /* QuoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65DDD41DA744410033C277 /* QuoteImage.swift */; };
 		1A65DDD71DA7450A0033C277 /* FolioReaderQuoteShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65DDD61DA7450A0033C277 /* FolioReaderQuoteShare.swift */; };
 		1A958F911D397BE900D56699 /* FRBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F051D397BE900D56699 /* FRBook.swift */; };
@@ -97,8 +94,8 @@
 		3A27F0C21FD9C25C00D84A57 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F241D397BE900D56699 /* PageViewController.swift */; };
 		3A27F0C31FD9C25C00D84A57 /* QuoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65DDD41DA744410033C277 /* QuoteImage.swift */; };
 		3A27F0C41FD9C25C00D84A57 /* ScrollScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F901D397BE900D56699 /* ScrollScrubber.swift */; };
-		3A27F0C51FD9C31E00D84A57 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD01DA744190033C277 /* Realm.framework */; };
-		3A27F0C61FD9C31E00D84A57 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD11DA744190033C277 /* RealmSwift.framework */; };
+		3A27F0C51FD9C31E00D84A57 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD01DA744190033C277 /* Realm.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3A27F0C61FD9C31E00D84A57 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD11DA744190033C277 /* RealmSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3A27F0C71FD9C33A00D84A57 /* Highlight+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F211D397BE900D56699 /* Highlight+Helper.swift */; };
 		3A27F0C81FD9C33A00D84A57 /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A958F231D397BE900D56699 /* Highlight.swift */; };
 		3AD5EEB91D9433C100E42810 /* FolioReaderWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5EEB81D9433C100E42810 /* FolioReaderWebView.swift */; };
@@ -106,20 +103,40 @@
 		8F0657DA253DF537006DDCA2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0657D9253DF537006DDCA2 /* Utilities.swift */; };
 		8F0657DE253DF55D006DDCA2 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0657DD253DF55D006DDCA2 /* ParseError.swift */; };
 		8F0657E2253DF571006DDCA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0657E1253DF571006DDCA2 /* Constants.swift */; };
-		8F3C0650253DDE2600F55189 /* FolioReaderScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C064F253DDE2600F55189 /* FolioReaderScript.swift */; };
+		8FDD96472549B81600FC7E45 /* FRScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD96462549B81600FC7E45 /* FRScript.swift */; };
+		8FDD964C2549B87700FC7E45 /* FRScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD96462549B81600FC7E45 /* FRScript.swift */; };
+		8FDD96552549B9C900FC7E45 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCB1D0388EF003B4CCD /* AEXML.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8FDD96562549B9C900FC7E45 /* AEXML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCB1D0388EF003B4CCD /* AEXML.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FDD96582549B9CA00FC7E45 /* FontBlaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCC1D0388EF003B4CCD /* FontBlaster.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8FDD96592549B9CA00FC7E45 /* FontBlaster.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCC1D0388EF003B4CCD /* FontBlaster.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FDD965A2549B9CC00FC7E45 /* MenuItemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDCB1DA73F8D0033C277 /* MenuItemKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8FDD965B2549B9CC00FC7E45 /* MenuItemKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDCB1DA73F8D0033C277 /* MenuItemKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FDD965C2549B9CE00FC7E45 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD01DA744190033C277 /* Realm.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8FDD965D2549B9CE00FC7E45 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD01DA744190033C277 /* Realm.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FDD965F2549B9CF00FC7E45 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD11DA744190033C277 /* RealmSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8FDD96602549B9CF00FC7E45 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65DDD11DA744190033C277 /* RealmSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FDD96612549B9D100FC7E45 /* ZFDragableModalTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCF1D0388EF003B4CCD /* ZFDragableModalTransition.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8FDD96622549B9D100FC7E45 /* ZFDragableModalTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCF1D0388EF003B4CCD /* ZFDragableModalTransition.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FDD96632549B9D300FC7E45 /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CD01D0388EF003B4CCD /* ZipArchive.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8FDD96642549B9D300FC7E45 /* ZipArchive.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CD01D0388EF003B4CCD /* ZipArchive.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FDD96752549BF6500FC7E45 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD96742549BF6500FC7E45 /* UnitTests.swift */; };
+		8FDD96772549BF6500FC7E45 /* FolioReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */; };
 		B0D6990F1D035FA2003B4CCD /* FolioReaderKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D6990E1D035FA2003B4CCD /* FolioReaderKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0D699161D035FA2003B4CCD /* FolioReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */; };
+		B0D699161D035FA2003B4CCD /* FolioReaderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B0D6991B1D035FA2003B4CCD /* FolioReaderKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D6991A1D035FA2003B4CCD /* FolioReaderKitTests.swift */; };
 		B0D69CC81D0387F7003B4CCD /* HADiscreteSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D69C441D0387F7003B4CCD /* HADiscreteSlider.swift */; };
 		B0D69CC91D0387F7003B4CCD /* SMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D69C461D0387F7003B4CCD /* SMSegment.swift */; };
 		B0D69CCA1D0387F7003B4CCD /* SMSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D69C471D0387F7003B4CCD /* SMSegmentView.swift */; };
-		B0D69CD11D0388EF003B4CCD /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCB1D0388EF003B4CCD /* AEXML.framework */; };
-		B0D69CD21D0388EF003B4CCD /* FontBlaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCC1D0388EF003B4CCD /* FontBlaster.framework */; };
-		B0D69CD51D0388EF003B4CCD /* ZFDragableModalTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CCF1D0388EF003B4CCD /* ZFDragableModalTransition.framework */; };
-		B0D69CD61D0388EF003B4CCD /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D69CD01D0388EF003B4CCD /* ZipArchive.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8FDD96782549BF6500FC7E45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0D699021D035FA1003B4CCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0D6990A1D035FA2003B4CCD;
+			remoteInfo = FolioReaderKit;
+		};
 		B0D699171D035FA2003B4CCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B0D699021D035FA1003B4CCD /* Project object */;
@@ -128,6 +145,26 @@
 			remoteInfo = FolioReaderKit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FDD96572549B9C900FC7E45 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8FDD965D2549B9CE00FC7E45 /* Realm.framework in Embed Frameworks */,
+				8FDD96622549B9D100FC7E45 /* ZFDragableModalTransition.framework in Embed Frameworks */,
+				8FDD96602549B9CF00FC7E45 /* RealmSwift.framework in Embed Frameworks */,
+				8FDD96562549B9C900FC7E45 /* AEXML.framework in Embed Frameworks */,
+				8FDD965B2549B9CC00FC7E45 /* MenuItemKit.framework in Embed Frameworks */,
+				8FDD96592549B9CA00FC7E45 /* FontBlaster.framework in Embed Frameworks */,
+				8FDD96642549B9D300FC7E45 /* ZipArchive.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A41E8902031E22300A8F70C /* MediaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
@@ -191,7 +228,10 @@
 		8F0657D9253DF537006DDCA2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		8F0657DD253DF55D006DDCA2 /* ParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
 		8F0657E1253DF571006DDCA2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		8F3C064F253DDE2600F55189 /* FolioReaderScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderScript.swift; sourceTree = "<group>"; };
+		8FDD96462549B81600FC7E45 /* FRScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRScript.swift; sourceTree = "<group>"; };
+		8FDD96722549BF6500FC7E45 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDD96742549BF6500FC7E45 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		8FDD96762549BF6500FC7E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FolioReaderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D6990E1D035FA2003B4CCD /* FolioReaderKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FolioReaderKit.h; sourceTree = "<group>"; };
 		B0D699101D035FA2003B4CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -209,17 +249,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8FDD966F2549BF6500FC7E45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDD96772549BF6500FC7E45 /* FolioReaderKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0D699071D035FA2003B4CCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A65DDCC1DA73F8E0033C277 /* MenuItemKit.framework in Frameworks */,
-				B0D69CD11D0388EF003B4CCD /* AEXML.framework in Frameworks */,
-				B0D69CD21D0388EF003B4CCD /* FontBlaster.framework in Frameworks */,
-				B0D69CD51D0388EF003B4CCD /* ZFDragableModalTransition.framework in Frameworks */,
-				B0D69CD61D0388EF003B4CCD /* ZipArchive.framework in Frameworks */,
-				1A65DDD21DA744190033C277 /* Realm.framework in Frameworks */,
-				1A65DDD31DA744190033C277 /* RealmSwift.framework in Frameworks */,
+				8FDD965A2549B9CC00FC7E45 /* MenuItemKit.framework in Frameworks */,
+				8FDD965F2549B9CF00FC7E45 /* RealmSwift.framework in Frameworks */,
+				8FDD96552549B9C900FC7E45 /* AEXML.framework in Frameworks */,
+				8FDD96612549B9D100FC7E45 /* ZFDragableModalTransition.framework in Frameworks */,
+				8FDD96582549B9CA00FC7E45 /* FontBlaster.framework in Frameworks */,
+				8FDD965C2549B9CE00FC7E45 /* Realm.framework in Frameworks */,
+				8FDD96632549B9D300FC7E45 /* ZipArchive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +323,6 @@
 				1A958F241D397BE900D56699 /* PageViewController.swift */,
 				1A65DDD41DA744410033C277 /* QuoteImage.swift */,
 				1A958F901D397BE900D56699 /* ScrollScrubber.swift */,
-				8F3C064F253DDE2600F55189 /* FolioReaderScript.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -293,6 +340,7 @@
 				1A958F0C1D397BE900D56699 /* FRSmils.swift */,
 				1A958F0D1D397BE900D56699 /* FRSpine.swift */,
 				1A958F0E1D397BE900D56699 /* FRTocReference.swift */,
+				8FDD96462549B81600FC7E45 /* FRScript.swift */,
 			);
 			path = EPUBCore;
 			sourceTree = "<group>";
@@ -383,12 +431,22 @@
 			path = HTMLEntities;
 			sourceTree = "<group>";
 		};
+		8FDD96732549BF6500FC7E45 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FDD96742549BF6500FC7E45 /* UnitTests.swift */,
+				8FDD96762549BF6500FC7E45 /* Info.plist */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
 		B0D699011D035FA1003B4CCD = {
 			isa = PBXGroup;
 			children = (
 				1A9590161D397CAF00D56699 /* FolioReaderKit.podspec */,
 				B0D6990D1D035FA2003B4CCD /* FolioReaderKit */,
 				B0D699191D035FA2003B4CCD /* FolioReaderKitTests */,
+				8FDD96732549BF6500FC7E45 /* UnitTests */,
 				B0D6990C1D035FA2003B4CCD /* Products */,
 				1A65DDCA1DA73F8C0033C277 /* Frameworks */,
 			);
@@ -399,6 +457,7 @@
 			children = (
 				B0D6990B1D035FA2003B4CCD /* FolioReaderKit.framework */,
 				B0D699151D035FA2003B4CCD /* FolioReaderKitTests.xctest */,
+				8FDD96722549BF6500FC7E45 /* UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -478,6 +537,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8FDD96712549BF6500FC7E45 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FDD967A2549BF6500FC7E45 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				8FDD966E2549BF6500FC7E45 /* Sources */,
+				8FDD966F2549BF6500FC7E45 /* Frameworks */,
+				8FDD96702549BF6500FC7E45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FDD96792549BF6500FC7E45 /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 8FDD96722549BF6500FC7E45 /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B0D6990A1D035FA2003B4CCD /* FolioReaderKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D6991F1D035FA2003B4CCD /* Build configuration list for PBXNativeTarget "FolioReaderKit" */;
@@ -486,6 +563,7 @@
 				B0D699071D035FA2003B4CCD /* Frameworks */,
 				B0D699081D035FA2003B4CCD /* Headers */,
 				B0D699091D035FA2003B4CCD /* Resources */,
+				8FDD96572549B9C900FC7E45 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -520,10 +598,15 @@
 		B0D699021D035FA1003B4CCD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = FolioReader;
 				TargetAttributes = {
+					8FDD96712549BF6500FC7E45 = {
+						CreatedOnToolsVersion = 12.0.1;
+						DevelopmentTeam = 2XX7KYZJLM;
+						ProvisioningStyle = Automatic;
+					};
 					B0D6990A1D035FA2003B4CCD = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
@@ -550,11 +633,19 @@
 			targets = (
 				B0D6990A1D035FA2003B4CCD /* FolioReaderKit */,
 				B0D699141D035FA2003B4CCD /* FolioReaderKitTests */,
+				8FDD96712549BF6500FC7E45 /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8FDD96702549BF6500FC7E45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0D699091D035FA2003B4CCD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -592,11 +683,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8FDD966E2549BF6500FC7E45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDD96752549BF6500FC7E45 /* UnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0D699061D035FA2003B4CCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F3C0650253DDE2600F55189 /* FolioReaderScript.swift in Sources */,
 				1A958FA11D397BE900D56699 /* FolioReaderFontsMenu.swift in Sources */,
 				1A958F9F1D397BE900D56699 /* FolioReaderConfig.swift in Sources */,
 				1A958FA51D397BE900D56699 /* FolioReaderPage.swift in Sources */,
@@ -607,6 +705,7 @@
 				1A958FAB1D397BE900D56699 /* Highlight+Helper.swift in Sources */,
 				3AD5EEB91D9433C100E42810 /* FolioReaderWebView.swift in Sources */,
 				1A958FA41D397BE900D56699 /* FolioReaderKit.swift in Sources */,
+				8FDD96472549B81600FC7E45 /* FRScript.swift in Sources */,
 				1A65DDD71DA7450A0033C277 /* FolioReaderQuoteShare.swift in Sources */,
 				3A27F08C1FD9BE5800D84A57 /* FolioReaderUserDefaults.swift in Sources */,
 				1A958FA21D397BE900D56699 /* FolioReaderHighlightList.swift in Sources */,
@@ -644,6 +743,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FDD964C2549B87700FC7E45 /* FRScript.swift in Sources */,
 				3A27F0A31FD9C24A00D84A57 /* FRSmilElement.swift in Sources */,
 				3A27F0A11FD9C24A00D84A57 /* FRResource.swift in Sources */,
 				3A27F0BC1FD9C25500D84A57 /* FolioReaderQuoteShare.swift in Sources */,
@@ -687,6 +787,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8FDD96792549BF6500FC7E45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0D6990A1D035FA2003B4CCD /* FolioReaderKit */;
+			targetProxy = 8FDD96782549BF6500FC7E45 /* PBXContainerItemProxy */;
+		};
 		B0D699181D035FA2003B4CCD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B0D6990A1D035FA2003B4CCD /* FolioReaderKit */;
@@ -695,6 +800,54 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8FDD967B2549BF6500FC7E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XX7KYZJLM;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = jha.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FDD967C2549BF6500FC7E45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XX7KYZJLM;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = jha.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B0D6991D1D035FA2003B4CCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -896,6 +1049,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8FDD967A2549BF6500FC7E45 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDD967B2549BF6500FC7E45 /* Debug */,
+				8FDD967C2549BF6500FC7E45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B0D699051D035FA1003B4CCD /* Build configuration list for PBXProject "FolioReaderKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
