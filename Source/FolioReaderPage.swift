@@ -167,6 +167,7 @@ open class FolioReaderPage: UICollectionViewCell, WKNavigationDelegate, UIGestur
             htmlString = HighlightInjector.htmlContentWithInsertedHighlights(
                 htmlContent,
                 highlights: highlights)
+            htmlString = htmlString.htmlEscape()
         }
         
         // Load the html into the webview
@@ -571,8 +572,7 @@ public class HighlightInjector {
                 let newRange = NSRange(location: range.location + item.contentPre.count, length: item.content.count)
                 tempHtmlContent = tempHtmlContent.replacingCharacters(in: newRange, with: tag) as NSString
             } else {
-                debugPrint("🔴🔴\(locator)🟢🟢")
-                print("highlight range not found")
+                debugPrint("🔴🔴 Highlight range not found 🟢🟢")
             }
         }
         return tempHtmlContent as String
