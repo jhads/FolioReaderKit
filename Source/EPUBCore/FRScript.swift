@@ -1,15 +1,15 @@
 //
-//  FolioReaderScript.swift
+//  FRScript.swift
 //  FolioReaderKit
 //
-//  Created by Stanislav on 12.06.2020.
-//  Copyright (c) 2015 Folio Reader. All rights reserved.
+//  Created by Vinicius Leal on 28/10/2020.
+//  Copyright © 2020 FolioReader. All rights reserved.
 //
 
 import WebKit
 
 class FolioReaderScript: WKUserScript {
-        
+    
     convenience init(source: String) {
         self.init(source: source, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
     }
