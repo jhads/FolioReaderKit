@@ -155,50 +155,23 @@ open class FolioReaderPage: UICollectionViewCell, WKNavigationDelegate, UIGestur
     }
 
     func loadHTMLString(_ htmlContent: String!, baseURL: URL!) {
-        // Insert the stored highlights to the HTML
-        let tempHtmlContent = htmlContentWithInsertHighlights(htmlContent)
+        guard var htmlString = htmlContent else { return }
+        
+        if let bookID = (book.name as NSString?)?.deletingPathExtension {
+            let highlights = Highlight.allByBookId(
+                withConfiguration: readerConfig,
+                bookId: bookID,
+                andPage: pageNumber as NSNumber?)
+            
+            // Insert the stored highlights to the HTML
+            htmlString = HighlightInjector.htmlContentWithInsertedHighlights(
+                htmlContent,
+                highlights: highlights)
+        }
+        
         // Load the html into the webview
         webView?.alpha = 0
-        webView?.loadHTMLString(tempHtmlContent, baseURL: baseURL)
-    }
-
-    // MARK: - Highlights
-
-    fileprivate func htmlContentWithInsertHighlights(_ htmlContent: String) -> String {
-        var tempHtmlContent = htmlContent as NSString
-        // Restore highlights
-        guard let bookId = (self.book.name as NSString?)?.deletingPathExtension else {
-            return tempHtmlContent as String
-        }
-
-        let highlights = Highlight.allByBookId(withConfiguration: self.readerConfig, bookId: bookId, andPage: pageNumber as NSNumber?)
-
-        if (highlights.count > 0) {
-            for item in highlights {
-                let style = HighlightStyle.classForStyle(item.type)
-                
-                var tag = ""
-                if let _ = item.noteForHighlight {
-                    tag = "<highlight id=\"\(item.highlightId!)\" onclick=\"callHighlightWithNoteURL(this);\" class=\"\(style)\">\(item.content!)</highlight>"
-                } else {
-                    tag = "<highlight id=\"\(item.highlightId!)\" onclick=\"callHighlightURL(this);\" class=\"\(style)\">\(item.content!)</highlight>"
-                }
-                
-                var locator = item.contentPre + item.content
-                locator += item.contentPost
-                locator = Highlight.removeSentenceSpam(locator) /// Fix for Highlights
-                
-                let range: NSRange = tempHtmlContent.range(of: locator, options: .literal)
-                
-                if range.location != NSNotFound {
-                    let newRange = NSRange(location: range.location + item.contentPre.count, length: item.content.count)
-                    tempHtmlContent = tempHtmlContent.replacingCharacters(in: newRange, with: tag) as NSString
-                } else {
-                    print("highlight range not found")
-                }
-            }
-        }
-        return tempHtmlContent as String
+        webView?.loadHTMLString(htmlString, baseURL: baseURL)
     }
 
     // MARK: - WKNavigation Delegate
@@ -565,4 +538,57 @@ open class FolioReaderPage: UICollectionViewCell, WKNavigationDelegate, UIGestur
         }
     }
     
+}
+
+// MARK: - Highlights
+
+public class HighlightInjector {
+    
+    public init() {}
+    
+    public static func htmlContentWithInsertedHighlights(
+        _ htmlContent: String,
+        highlights: [Highlight]
+    ) -> String {
+        guard !highlights.isEmpty else { return htmlContent }
+        
+        var tempHtmlContent = htmlContent.htmlUnescape() as NSString
+        
+        for item in highlights {
+            let style = HighlightStyle.classForStyle(item.type)
+            
+            let tag = generateTag(from: item, style: style)
+            
+            var locator = generateLocator(from: item)
+                .replacingOccurrences(of: "“", with: "&#x201C;")
+                .replacingOccurrences(of: "”", with: "&#x201D;")
+            
+            locator = Highlight.removeSentenceSpam(locator.htmlUnescape()) /// Fix for Highlights
+            
+            let range: NSRange = tempHtmlContent.localizedStandardRange(of: locator)
+            
+            if range.location != NSNotFound {
+                let newRange = NSRange(location: range.location + item.contentPre.count, length: item.content.count)
+                tempHtmlContent = tempHtmlContent.replacingCharacters(in: newRange, with: tag) as NSString
+            } else {
+                debugPrint("🔴🔴\(locator)🟢🟢")
+                print("highlight range not found")
+            }
+        }
+        return tempHtmlContent as String
+    }
+    
+    static func generateTag(from highlight: Highlight, style: String) -> String {
+        var tag = ""
+        if let _ = highlight.noteForHighlight {
+            tag = "<highlight id=\"\(highlight.highlightId!)\" onclick=\"callHighlightWithNoteURL(this);\" class=\"\(style)\">\(highlight.content!)</highlight>"
+        } else {
+            tag = "<highlight id=\"\(highlight.highlightId!)\" onclick=\"callHighlightURL(this);\" class=\"\(style)\">\(highlight.content!)</highlight>"
+        }
+        return tag
+    }
+    
+    static func generateLocator(from highlight: Highlight) -> String {
+        highlight.contentPre + highlight.content + highlight.contentPost
+    }
 }
