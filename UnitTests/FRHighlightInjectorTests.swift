@@ -1,5 +1,5 @@
 //
-//  HighlightInjectorTests.swift
+//  FRHighlightInjectorTests.swift
 //  UnitTests
 //
 //  Created by Vinicius Leal on 28/10/2020.
@@ -9,13 +9,13 @@
 @testable import FolioReaderKit
 import XCTest
 
-class HighlightInjectorTests: XCTestCase {
+class FRHighlightInjectorTests: XCTestCase {
     
     func test_insertHighlights_correctlyInsertsHighlightsWithSmallString() {
         let initialString = "This is a highlight example to perform test."
         let highlight = makeHighlight()
         
-        let modifiedString = HighlightInjector.htmlContentWithInsertedHighlights(
+        let modifiedString = FRHighlightInjector.htmlContentWithInsertedHighlights(
             initialString,
             highlights: [highlight])
         
@@ -27,7 +27,7 @@ class HighlightInjectorTests: XCTestCase {
         let initialString: String = .htmlString
         let highlights = makeHighlights()
         
-        let modifiedString = HighlightInjector.htmlContentWithInsertedHighlights(
+        let modifiedString = FRHighlightInjector.htmlContentWithInsertedHighlights(
             initialString,
             highlights: highlights)
         
@@ -37,14 +37,14 @@ class HighlightInjectorTests: XCTestCase {
     
     func test_generateTag_insertsCorrectTag() {
         let highlight1 = makeHighlight()
-        let tag1 = HighlightInjector.generateTag(from: highlight1, style: "any style")
+        let tag1 = FRHighlightInjector.generateTag(from: highlight1, style: "any style")
         
         XCTAssertTrue(tag1.contains(highlight1.highlightId))
         XCTAssertTrue(tag1.contains(highlight1.content))
         XCTAssertTrue(tag1.contains("callHighlightURL(this)"))
         
         let highlight2 = makeHighlight("any note")
-        let tag2 = HighlightInjector.generateTag(from: highlight2, style: "any style")
+        let tag2 = FRHighlightInjector.generateTag(from: highlight2, style: "any style")
         
         XCTAssertTrue(tag2.contains(highlight1.highlightId))
         XCTAssertTrue(tag2.contains(highlight1.content))
@@ -53,7 +53,7 @@ class HighlightInjectorTests: XCTestCase {
     
     func test_generateLocator_producesCorrectLocator() {
         let highlight = makeHighlight()
-        let locator = HighlightInjector.generateLocator(from: highlight)
+        let locator = FRHighlightInjector.generateLocator(from: highlight)
         
         XCTAssertTrue(locator.contains(highlight.content))
         XCTAssertTrue(locator.contains(highlight.contentPre))
