@@ -114,7 +114,7 @@ class HighlightInjectorTests: XCTestCase {
     }
 }
 
-class UnitTests: XCTestCase {
+class FolioReaderPageTests: XCTestCase {
 
     func test_loadHTML_deliversMessageToWebView() {
         let sut = FolioReaderPage()
