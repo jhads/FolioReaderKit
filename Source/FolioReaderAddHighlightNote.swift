@@ -81,6 +81,7 @@ class FolioReaderAddHighlightNote: UIViewController {
         
         containerView = UIView()
         containerView.backgroundColor = .white
+        view.backgroundColor = .white
         scrollView.addSubview(containerView)
         view.addSubview(scrollView)
         
