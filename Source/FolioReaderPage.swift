@@ -167,7 +167,6 @@ open class FolioReaderPage: UICollectionViewCell, WKNavigationDelegate, UIGestur
             htmlString = FRHighlightInjector.htmlContentWithInsertedHighlights(
                 htmlContent,
                 highlights: highlights)
-            htmlString = htmlString.htmlEscape()
         }
         
         // Load the html into the webview
