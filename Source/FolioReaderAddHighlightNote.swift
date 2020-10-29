@@ -9,7 +9,7 @@ import UIKit
 import RealmSwift
 
 class FolioReaderAddHighlightNote: UIViewController {
-
+    
     var textView: UITextView!
     var highlightLabel: UILabel!
     var scrollView: UIScrollView!
@@ -80,8 +80,8 @@ class FolioReaderAddHighlightNote: UIViewController {
         scrollView.bounces = false
         
         containerView = UIView()
-        containerView.backgroundColor = .white
-        view.backgroundColor = .white
+        containerView.backgroundColor = folioReader.isNight(UIColor.black, UIColor.white)
+        view.backgroundColor = folioReader.isNight(UIColor.black, UIColor.white)
         scrollView.addSubview(containerView)
         view.addSubview(scrollView)
         
@@ -97,13 +97,13 @@ class FolioReaderAddHighlightNote: UIViewController {
         textView = UITextView()
         textView.delegate = self
         textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.textColor = .black
+        textView.textColor = folioReader.isNight(UIColor.white, UIColor.black)
         textView.backgroundColor = .clear
         textView.font = UIFont.boldSystemFont(ofSize: 15)
         containerView.addSubview(textView)
         
         if isEditHighlight {
-             textView.text = highlight.noteForHighlight
+            textView.text = highlight.noteForHighlight
         }
         
         let leftConstraint = NSLayoutConstraint(item: textView!, attribute: .left, relatedBy: .equal, toItem: containerView, attribute: .left, multiplier: 1.0, constant: 20)
@@ -119,6 +119,7 @@ class FolioReaderAddHighlightNote: UIViewController {
         highlightLabel.numberOfLines = 3
         highlightLabel.font = UIFont.systemFont(ofSize: 15)
         highlightLabel.text = highlight.content.stripHtml().truncate(250, trailing: "...").stripLineBreaks()
+        highlightLabel.textColor = folioReader.isNight(UIColor.white, UIColor.black)
         
         containerView.addSubview(self.highlightLabel!)
         
@@ -197,7 +198,7 @@ extension FolioReaderAddHighlightNote: UITextViewDelegate {
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         textView.frame.size.height = textView.frame.height + 30
-
+        
         if resizedTextView {
             scrollView.scrollRectToVisible(textView.frame, animated: true)
         }
