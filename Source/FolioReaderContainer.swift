@@ -199,6 +199,20 @@ open class FolioReaderContainer: UIViewController {
             self.dismiss()
         }
     }
+    
+    @available(iOS 12.0, *)
+    open func didUpdateTraitCollection(_ previousTraitCollection: UITraitCollection?) {
+        guard traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle else { return }
+        
+        folioReader.nightMode.toggle()
+    }
+    
+    open override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if #available(iOS 12.0, *) {
+            didUpdateTraitCollection(previousTraitCollection)
+        }
+    }
 
     /**
      Initialize the media player
