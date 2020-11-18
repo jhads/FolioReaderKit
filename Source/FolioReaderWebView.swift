@@ -46,6 +46,19 @@ open class FolioReaderWebView: WKWebView {
 
         let configuration = WKWebViewConfiguration()
         configuration.dataDetectorTypes = .link
+        
+        let scriptWidthAdjustment = "var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);"
+        
+        let scriptImgSizeAdjustment = "var style = document.createElement('style');style.innerHTML = 'img { display: inline;height: auto;max-width: 100%; }';document.getElementsByTagName('head')[0].appendChild(style);"
+        
+        let widthScript = WKUserScript(source: scriptWidthAdjustment, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        let imageScript = WKUserScript(source: scriptImgSizeAdjustment, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        
+        let wkUController = WKUserContentController()
+        wkUController.addUserScript(widthScript)
+        wkUController.addUserScript(imageScript)
+        configuration.userContentController = wkUController
+        
         super.init(frame: frame, configuration: configuration)
         let cssScript = FolioReaderScript(source: ScriptSource.cssInjection)
         cssScript.addIfNeeded(to: self)
