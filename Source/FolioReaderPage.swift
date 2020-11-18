@@ -171,6 +171,7 @@ open class FolioReaderPage: UICollectionViewCell, WKNavigationDelegate, UIGestur
         
         // Load the html into the webview
         webView?.alpha = 0
+        webView?.loadFileURL(baseURL, allowingReadAccessTo: baseURL)
         webView?.loadHTMLString(htmlString, baseURL: baseURL)
     }
 
