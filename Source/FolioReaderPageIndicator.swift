@@ -87,6 +87,9 @@ class FolioReaderPageIndicator: UIView {
     }
 
     fileprivate func reloadViewWithPage(_ page: Int) {
+        if totalPages == 0 {
+            totalPages = 1
+        }
         let pagesRemaining = self.folioReader.needsRTLChange ? totalPages-(totalPages-page+1) : totalPages-page
 
         if pagesRemaining == 1 {
