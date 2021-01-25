@@ -141,12 +141,12 @@ img, svg, audio, video {
 /* End Ted */
 
 /* Divs are also used to size images so make sure the authors get what they intended */
-/* which is for the images boxed in them to be completely visible on screen */
+/* which is for the images boxed in them to be completely visible on screen
 div { max-width: 100%; }
 aside[epub|type~="footnote"] { display: none !important; }
 ruby > rt, ruby > rp { -webkit-user-select: none; }
 * { -webkit-font-smoothing: subpixel-antialiased }
-
+*/
 
 /*
  *
